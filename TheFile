@@ -1,0 +1,23 @@
+coffee = {'Latte': 3, 'Black Coffee': 2.50, 'Capuccino': 1, 'Macchiato': 3}
+# Greet your customer
+# Ask your customer what their name is with the input() function and store that in the variable NAME.
+# Greet the customer with their name and thank them for coming in today using concatenation.
+# Coffee menu.
+# Ask the customer what they would like from the menu and store it in the variable order.
+# Ask the customer how many coffees they would like and store it in the variable QUANTITY
+# Set the price for coffee
+# Calculate the customer's total
+# Give the customer their total
+# Final statement and asking if they would like anything else.
+print("Welcome, dear customer, to the Coffee Robot Automation Program, or CRAP for short!\n")
+NAME = input("What is your name, customer?: ").title()
+print("Welcome, " + NAME + ", thank you for coming today!")
+
+def coffee_picker():
+    print(coffee)
+    order = input('Please select a coffee: ').title()
+    QUANTITY = input("How much of {} would you like? ".format(order))
+    print("Your total is: ${}".format(coffee[order] * QUANTITY))
+    
+
+coffee_picker()
