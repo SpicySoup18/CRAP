@@ -17,7 +17,7 @@ def coffee_picker():
     print(coffee)
     order = input('Please select a coffee: ').title()
     QUANTITY = input("How much of {} would you like? ".format(order))
-    print("Your total is: ${}".format(coffee[order] * QUANTITY))
+    print("Your total is: ${}".format(coffee[order] * float(QUANTITY)))
     
 
 coffee_picker()
